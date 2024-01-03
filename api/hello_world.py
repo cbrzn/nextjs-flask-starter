@@ -1,4 +1,4 @@
-from .main import app
+from .app import app
 
 @app.get("/api/siu")
 async def siu():

@@ -2,14 +2,22 @@
     "version": 2,
     "builds": [
         {
-            "src": "/api/*",
+            "src": "/api/hello_world.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "/api/another_endpoint.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/api/*"
+            "dest": "/api/hello_world.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/another_endpoint.py"
         }
     ]
 }

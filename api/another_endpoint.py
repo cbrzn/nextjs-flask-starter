@@ -1,4 +1,4 @@
-from .main import app
+from .app import app
 
 @app.get("/api/yo")
 async def another_endpoint():
