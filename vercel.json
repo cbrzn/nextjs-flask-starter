@@ -12,11 +12,11 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/siu",
             "dest": "/api/hello_world.py"
         },
         {
-            "src": "/(.*)",
+            "src": "/api/yo",
             "dest": "/api/another_endpoint.py"
         }
     ]
