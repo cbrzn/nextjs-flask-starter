@@ -1,23 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "/api/hello_world.py",
-            "use": "@vercel/python"
-        },
-        {
-            "src": "/api/another_endpoint.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/siu",
-            "dest": "/api/hello_world.py"
-        },
-        {
-            "src": "/api/yo",
-            "dest": "/api/another_endpoint.py"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "/api/siu.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "/api/yo.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/siu",
+      "dest": "/api/siu.py"
+    },
+    {
+      "src": "/api/yo",
+      "dest": "/api/yo.py"
+    }
+  ]
 }
